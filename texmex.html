@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tex-Mex 🌮</title>
+    <style>
+      body {
+        background: linear-gradient(
+          109.6deg,
+          rgb(255, 251, 213) 11.2%,
+          rgb(178, 10, 44) 91.2%
+        );
+      }
+
+      h1 {
+        text-align: center;
+        color: black;
+        font-family: sans-serif;
+      }
+
+      h2 {
+        text-align: center;
+        border: 1px solid black;
+        padding: 15px;
+        font-size: 22px;
+        border-radius: 4px;
+        font-family: sans-serif;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+
+      p {
+        line-height: 1.5;
+        font-size: 18px;
+        margin: 20px 0 10px;
+        font-family: sans-serif;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        background: rgb(255, 251, 213) 11.2%;
+        color: black;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 15px 60px;
+      }
+
+      .learn-more {
+        color: brown;
+        text-decoration: none;
+        font-size: 18px;
+        font-family: sans-serif;
+      }
+
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+
+      .footer {
+        text-align: center;
+      }
+
+      .link {
+        color: rgb(255, 251, 213);
+        text-decoration: none;
+      }
+      .link:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>All About Tex-Mex</h1>
+      <h2>Some of my favorite Tex-Mex includes fajitas, nachos, and queso.</h2>
+      <img
+        src="https://bigseventravel.com/wp-content/uploads/2020/02/panchitos.jpg"
+        alt="Tex-Mex"
+      />
+      <br />
+      <p>
+        <strong>
+          Tex-Mex cuisine is an American and Texan cuisine that derives from the
+          culinary creations of the Tejano people of Texas. It has spread from
+          border states such as Texas and others in the Southwestern United
+          States to the rest of the country.</strong
+        >
+        <br />
+        The most <em>notable</em> difference between Tex-Mex and Mexican food is
+        the difference in ingredients used. One of the definite marks of Tex-Mex
+        is the use of yellow cheese. However, in Mexican food it isn't as
+        common; chile peppers, cacao, oregano, epazote, and cilantro are more
+        commonly used instead.
+      </p>
+
+      <br />
+      <a
+        href="https://en.wikipedia.org/wiki/Tex-Mex"
+        target="_blank"
+        class="learn-more"
+      >
+        Learn more on Wikipedia
+      </a>
+      <button class="buy-button">Find Tex-Mex Near You 🌮</button>
+      <p class="footer">
+        This page was built by
+        <a
+          href="https://www.portfolio.carynmaltby.com/"
+          target="_blank"
+          class="link"
+        >
+          Caryn Maltby
+        </a>
+      </p>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email?");
+        let mex = prompt("Do you like Tex-Mex?");
+        if ((mex = "yes")) {
+          alert("Yay! 😁");
+        } else {
+          alert("Sorry to hear that ☹️");
+        }
+        alert(
+          "Thank you, " +
+            name +
+            "! We'll be in touch by email, meanwhile check out your local Tex-Mex spot! "
+        );
+      }
+
+      let buyButton = document.querySelector(".buy-button");
+      buyButton.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
